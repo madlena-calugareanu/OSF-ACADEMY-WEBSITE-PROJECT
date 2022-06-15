@@ -1,0 +1,105 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* NAVBAR CONTAINER */
+
+nav{
+    overflow: hidden;
+    background-color: #a5a5a5;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+/* The dropdown button */
+.dropbtn{
+    border: none;
+    outline: none;
+    font: inherit;
+    margin: 0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Display the rows next to each other */
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Columns next to each other */
+.column {
+    float: left;
+    height: auto;
+  }
+
+/* Display product categories in a grid*/
+#product-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* Display sales in a grid*/
+#sale-col{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* Style links inside the columns */
+.column a{
+    width: 100px;
+    height: 20px;
+    text-align: left;
+}
+
+/* Icons */
+
+/* When the screen is less than 768px wide, hide all links, 
+except for the menu icon.*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .dropdown, a[href^="#company"], a[href^="#library"], a[href^="#contact"]{
+      display: none;
+    }
+}

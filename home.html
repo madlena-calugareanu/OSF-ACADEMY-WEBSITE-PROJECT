@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav>
+    <div class="wrapper">
+      <!-- Logo -->
+      <div class="logo"><a href="#">CodingNepal</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <!-- Links -->
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="img.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Design Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="#">Vectors</a></li>
+                  <li><a href="#">Business cards</a></li>
+                  <li><a href="#">Custom logo</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Email Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Personal Email</a></li>
+                  <li><a href="#">Business Email</a></li>
+                  <li><a href="#">Mobile Email</a></li>
+                  <li><a href="#">Web Marketing</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Security services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Site Seal</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="#">Privacy Seal</a></li>
+                  <li><a href="#">Website design</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <div class="body-text">
+    <div class="title">Responsive Dropdown and Mega Menu</div>
+    <div class="sub-title">using only HTML & CSS</div>
+  </div>
+</body>
+</html>
+
+
+<!-- MY HTML-->
+
+
+<nav>
+    <!-- NAVIGATION -->
+    <i class="fa-solid fa-bars"></i>
+    <div class="dropdown">
+      <button class="dropbtn"><a href="#services">SERVICES</a>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+            <div class="row">
+                <h2>Product Categories</h2>
+                <div class="column" id="product-col">
+                    <a href="#">Accessories</a>
+                    <a href="#">Alcohol</a>
+                    <a href="#">Art</a>
+                    <a href="#">Books</a>
+                    <a href="#">Drink</a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Flowers & Plants</a>
+                    <a href="#">Food</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Garden</a>
+                    <a href="#">Grocery</a>
+                    <a href="#">Home</a>
+                    <a href="#">Jewelry</a>
+                    <a href="#">Kids & Baby</a>
+                    <a href="#">Men's Fashion</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Motorcycles</a>
+                    <a href="#">Movies</a>
+                    <a href="#">Music</a>
+                    <a href="#">Office</a>
+                    <a href="#">Pets</a>
+                    <a href="#">Romantic</a>
+                    <a href="#">Sport</a>
+                    <a href="#">Toys</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Sale</h2>
+                <div class="column" id="sale-col">
+                    <a href="#">Accessories</a>
+                    <a href="#">Alcohol</a>
+                    <a href="#">Art</a>
+                    <a href="#">Books</a>
+                    <a href="#">Drink</a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Flowers & Plants</a>
+                    <a href="#">Food</a>
+                </div>
+            </div>
+
+            <div class="row" id="img-col">
+                <img src='PICTURES\navbar-img.jpg 'alt="stylish woman in a dress">
+            </div>
+      </div>
+    </div>
+    <a href="#company">COMPANY</a>
+    <a href="#library">LIBRARY</a>
+    <a href="#contact">CONTACT US</a>
+
+    <div class="dropdown">
+        <button class="dropbtn"><a href="#language">EN</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="row">
+                <h2>EN</h2>
+                <h2>DE</h2>
+            </div>                        
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><a href="#currency">$US</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="row">
+                <h2>US</h2>
+                <h2>EUR</h2>
+            </div>                        
+        </div>
+    </div>
+
+    <!-- ICONS -->
+</nav>
