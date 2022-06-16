@@ -18,13 +18,20 @@
                 <div class="logo">
                     <a href="#"><img src="PICTURES\logo.jpg" alt="Logo"></a>
                 </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
                 <ul class="nav-links">
-                    <li>
-                        <a href="#">SERVICES</a>
+                    <label for="close-btn" class="btn close-btn"><i class="fa-solid fa-xmark fa-xl"></i></label>
+                    <li class="main-link">
+                        <a href="#" class="a-links desktop-item">SERVICES <i class="fa-solid fa-caret-down"></i></a>
+                        <label for="showDrop" class="mobile-item">SERVICES <i class="fa-solid fa-caret-down"></i></label>
+                        <input type="checkbox" id="showDrop">
                         <div class="mega-box">
                             <div class="content">
                               <div class="row">
                                 <header>PRODUCT CATEGORIES</header>
+                                <label for="showCategories" class="mobile-item">PRODUCT CATEGORIES <i class="fa-solid fa-caret-down"></i></label>
+                                <input type="checkbox" id="showCategories">
                                 <ul class="mega-links" id="product-col">
                                     <a href="#">Accessories</a>
                                     <a href="#">Alcohol</a>
@@ -54,6 +61,8 @@
                               </div>
                               <div class="row">
                                 <header>SALE</header>
+                                <label for="showSale" class="mobile-item">SALES <i class="fa-solid fa-caret-down"></i></label>
+                                <input type="checkbox" id="showSale">
                                 <ul class="mega-links" id="sale-col">
                                     <a href="#">Accessories</a>
                                     <a href="#">Alcohol</a>
@@ -71,16 +80,31 @@
                             </div>
                           </div>
                     </li> 
-                    <li><a href="#">COMPANY</a></li>
-                    <li><a href="#">LIBRARY</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">$US</a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="main-link"><a href="#" class="a-links">COMPANY</a></li>
+                    <li class="main-link"><a href="#" class="a-links">LIBRARY</a></li>
+                    <li class="main-link"><a href="#" class="a-links">CONTACT US</a></li>
+                    <li><a href="#">EN <i class="grey fa-solid fa-caret-down"></i></a>
+                        <form>
+                            <input type="checkbox" id="langRo" name="lang" value="RO">
+                            <label for="langRo">RO</label><br>
+                            <input type="checkbox" id="langEn" name="lang" value="EN">
+                            <label for="langEn">EN</label>
+                        </form>
+                    </li>
+                    <li><a href="#">$US <i class="grey fa-solid fa-caret-down"></i></a>
+                        <form>
+                            <input type="checkbox" id="currEur" name="curr" value="EUR">
+                            <label for="currEur">EUR</label> <br>
+                            <input type="checkbox" id="currUs" name="curr" value="US">
+                            <label for="currUs">US</label>
+                        </form>
+                    </li>
+                    <li><a href="#"><i class="grey fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="grey fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="grey fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="grey fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars fa-xl"></i></label>
             </div>
         </nav>
     </header>

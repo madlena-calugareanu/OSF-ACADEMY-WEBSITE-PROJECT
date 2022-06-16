@@ -53,17 +53,7 @@ nav .wrapper{
     transition: all 0.3s ease;
   }
 
-  .nav-links li i.fa-magnifying-glass{
-    padding-left: 4rem;
-  }
-
-  .nav-links li:first-child{
-    padding-left: 4rem;
-  }
-
-  .nav-links li i,
-  li:nth-child(5),
-  li:nth-child(6){
+  .nav-links li a i.grey{
     opacity: 0.70;
     color: gray;
   }
@@ -76,25 +66,81 @@ nav .wrapper{
     width: 100%;
     top: 85px;
     padding: 0;
- /* opacity: 0;
-    visibility: hidden; */
+ 
+  }
+
+  .nav-links .mega-box{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-links li:hover .mega-box{
+    opacity: 100;
+    visibility: visible;
+  }
+
+  li.main-link a.a-links:hover{
+    background-color: #242526;
+    border-radius: 0;
+    color: #ffffff;
+    border-bottom: solid 4px #84bc22;
+    padding-bottom: 1.5rem;
+  }
+
+  li.main-link a.a-links i{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  li.main-link a.a-links:hover i{
+    visibility: visible;
+    opacity: 100;
+    color: gray;
+    background-color: transparent;
+  }
+
+  ul#product-col a:hover{
+    color:#84bc22;
+  }
+
+  ul#sale-col a:hover{
+    color:#84bc22;
   }
 
   .mega-box .content{
     background: #242526;
     padding: 2rem;
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.mega-box a{
+    background: #242526;
+}
+
+.mega-box header{
+    background: #242526;
+    padding-left: 3.50rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+#sale-col a{
+    color: #ffffff;
+}
+
+#product-col a{
+    color: #ffffff;
+}
 /* Display product categories in a grid*/
 #product-col{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    background: #242526;
 }
 
 /* Display sales in a grid*/
@@ -102,6 +148,224 @@ nav .wrapper{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    background: #242526;
+}
+
+.row:nth-child(3){
+    background: #242526;
+}
+
+.row img{
+    background: #242526;
+    border-radius: 5px;
+}
+
+li form {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+
+li:hover form {
+    opacity: 100;
+    visibility: visible;
+}
+
+li form input, li form label{
+    display: inline-flex;
+}
+li form{
+    padding-left: 1rem;
+}
+
+.mobile-item{
+    display: none;
+}
+
+#showDrop{
+    display: none;
+}
+
+
+#showCategories,
+#showSale{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+@media screen and (max-width: 1280px){
+    .wrapper .nav-links{
+        background-color: #242526;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        max-width: 250px;
+        display: block;
+        top: 0;
+        left: -100%;
+        overflow-y: auto;
+        line-height: 50px;
+        padding: 50px 50px;
+    }
+    .wrapper .nav-links li{
+        margin: 15px 10px;
+        background-color: #242526;
+        position: static;
+        display: block;
+    }
+    .nav-links .mobile-item{
+        display: block;
+        cursor: pointer;
+        background-color: #242526;
+        color: white;
+    }
+
+    .desktop-item{
+        display: none;
+    }
+
+    .nav-links li .mega-box:hover{
+        visibility: visible;
+    }
+
+    .nav-links li .mega-box{
+        display: block;
+        position: static;
+        visibility: visible;
+        opacity: 100;
+    }
+
+    /* Hide contents when service is checked*/
+    #showDrop:checked ~ .mega-box{
+        display: none;
+    }
+
+    .wrapper input{
+        display: none;
+    }
+
+    .nav-links a.a-links{
+        background-color: #242526;
+        color: #ffffff;
+        padding-left: 0;
+    }
+
+    /* Hide lang, curr and the icons*/
+    .nav-links li:nth-child(6),
+    .nav-links li:nth-child(7),
+    .nav-links li:nth-child(8),
+    .nav-links li:nth-child(9),
+    .nav-links li:nth-child(10),
+    .nav-links li:nth-child(11){
+        display: none;
+    }
+      
+    /* Get rid of previous hover effects*/
+    li.main-link a.a-links:hover{
+        background-color: #242526;
+        border-radius: 0;
+        color: #ffffff;
+        border-bottom: solid 0 #242526;
+        padding-bottom: 0;
+    }
+
+    /* Mega box */
+
+    .mega-box .content{
+        position: relative;
+        display: block;
+        line-height: normal;
+        overflow: hidden;
+        width: auto;
+        height: 100%;
+        padding: 0 0 0 1rem;
+    }
+
+    .mega-box .content header{
+        display: none;
+    }
+
+    .mega-box .content #sale-col{
+        padding: 0;
+    }
+
+    #product-col,
+    #product-sale{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mega-box img{
+        display: none;
+    }
+
+    /*Don't display links when categories and sales is clicked*/
+    #showCategories:checked ~ .mega-links,
+    #showSale:checked ~ .mega-links{
+        display: none;
+    }
+
+
+    .row label.mobile-item {
+        padding: 1rem 0 1rem 0;
+    }
+
+    /* Dropdown icons*/
+
+    label i.fa-caret-down{
+        background-color: transparent;
+        color: #45413e;
+        padding-left: 5px;
+    }
+
+    label i.fa-caret-up{
+        background-color: transparent;
+        color: #45413e;
+        padding-left: 5px;
+    }
+
+    label i.fa-xmark{
+        background-color: transparent;
+        color: #ffffff;
+    }
+    .close-btn{
+        background-color: transparent;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+    #menu-btn:checked ~ .nav-links{
+        left: 0%;
+    }
+    
+    #menu-btn:checked ~ .btn{
+        display: none;
+    }
+
+    .btn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-btn{
+        position: absolute;
+        left: 50px;
+        top: 40px;
+    }
+
+    input[type='radio']{
+        display: none;
+        cursor: pointer;
+    }
 }
