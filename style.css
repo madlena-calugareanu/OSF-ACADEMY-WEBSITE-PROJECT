@@ -248,6 +248,33 @@ input[type='radio']{
         display: none;
     }
 
+    /* Hide down caret when clicked */
+    #showDrop:checked ~ label i.fa-caret-up,
+    #showCategories:checked ~ label i.fa-caret-up,
+    #showSale:checked ~ label i.fa-caret-up{
+        display: none;
+    }
+
+    #showDrop:checked ~ label i.fa-caret-down,
+    #showCategories:checked ~ label i.fa-caret-down,
+    #showSale:checked ~ label i.fa-caret-down{
+        display: inline-block;
+    }
+
+    /* Hide up caret when not clicked */
+    #showDrop ~ label i.fa-caret-up,
+    #showCategories ~ label i.fa-caret-up,
+    #showSale ~ label i.fa-caret-up{
+        display: inline-block;
+    }
+
+    #showDrop ~ label i.fa-caret-down,
+    #showCategories ~ label i.fa-caret-down,
+    #showSale ~ label i.fa-caret-down{
+        display: none;
+    }
+
+
     .wrapper input{
         display: none;
     }
@@ -540,7 +567,7 @@ footer input{
         bottom: 0;
         width: 100%;
         height: 20rem;
-        background-color: rgb(203, 122, 122);
+        background-color: white;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -571,22 +598,20 @@ footer input{
 
     footer .brands ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
+        flex-wrap: nowrap;
     }
 
     footer .brands ul li{
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .footer-main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 70%;
+        display: inline-block;
+        width: 60%;
         bottom: 0;
     }
 
@@ -603,4 +628,67 @@ footer input{
         padding-left: 1rem;
     }
 
+    footer .contact,
+    footer .about,
+    footer .categories{
+        display: block;
+        position: static;
+    }
+
+    /* FOOTER Caret down styles*/
+    footer label i.fa-caret-down{
+        color: #a5a5a5;
+    }
+
+    footer .contact label i.fa-caret-down{
+        padding-left: calc(95% - 80px);
+    }
+    footer .categories label i.fa-caret-down{
+        padding-left: calc(95% - 103px);
+    }
+    footer .about label i.fa-caret-down{
+        padding-left: calc(95% - 60px);
+    }
+
+    /* FOOTER Caret up styles*/
+    footer label i.fa-caret-up{
+        color: #a5a5a5;
+    }
+
+    footer .contact label i.fa-caret-up{
+        padding-left: calc(95% - 80px);
+    }
+    footer .categories label i.fa-caret-up{
+        padding-left: calc(95% - 103px);
+    }
+    footer .about label i.fa-caret-up{
+        padding-left: calc(95% - 60px);
+    }
+
+
+    /* Hide down caret when clicked */
+    #showContact:checked ~ label i.fa-caret-down,
+    #showFooterCategories:checked ~ label i.fa-caret-down,
+    #showAbout:checked ~ label i.fa-caret-down{
+        display: none;
+    }
+
+    #showContact:checked ~ label i.fa-caret-up,
+    #showFooterCategories:checked ~ label i.fa-caret-up,
+    #showAbout:checked ~ label i.fa-caret-up{
+        display: inline-block;
+    }
+
+    /* Hide up caret when not clicked */
+    #showContact ~ label i.fa-caret-down,
+    #showFooterCategories ~ label i.fa-caret-down,
+    #showAbout ~ label i.fa-caret-down{
+        display: inline-block;
+    }
+
+    #showContact ~ label i.fa-caret-up,
+    #showFooterCategories ~ label i.fa-caret-up,
+    #showAbout ~ label i.fa-caret-up{
+        display: none;
+    }
 }
