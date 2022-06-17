@@ -58,6 +58,23 @@ nav .wrapper{
     color: gray;
   }
 
+  span .fa-layers-counter{
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 2px #84bc22;
+    text-align: center;
+    font-size: 9px;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    top: -10px;
+    left: -8px;
+  }
+
+  .nav-links span.fa-layers.fa-fw {
+    background-color: transparent;   
+}
+
   /* Mega-box menu */
 
   .mega-box{
@@ -243,6 +260,7 @@ input[type='radio']{
         opacity: 100;
     }
 
+    
     /* Hide contents when service is checked*/
     #showDrop:checked ~ .mega-box{
         display: none;
@@ -285,23 +303,63 @@ input[type='radio']{
         padding-left: 0;
     }
 
-    /* Hide lang, curr and the icons*/
+
+    span .fa-layers-counter{
+        display: inline-block;
+        background-color:#242526;
+        border-radius: 50%;
+        border: solid 2px #84bc22;
+        font-size: 9px;
+        color: #ffffff;
+        position: relative;
+        top: -10px;
+        line-height: normal;
+      }
+      
+    /* Get rid of previous hover effects*/
+    li.main-link a.a-links:hover,
+    li.main-link label.mobile-item:hover{
+        background-color: #242526;
+        border-radius: 0;
+        color: #686868;
+        border-bottom: solid 0 #242526;
+        
+    }
+
+    /* Hide lang, curr */
     .nav-links li:nth-child(6),
-    .nav-links li:nth-child(7),
+    .nav-links li:nth-child(7){
+        display: none;
+    }
+
+    /* Display icons */
     .nav-links li:nth-child(8),
     .nav-links li:nth-child(9),
     .nav-links li:nth-child(10),
     .nav-links li:nth-child(11){
-        display: none;
+        display: inline;
     }
-      
-    /* Get rid of previous hover effects*/
-    li.main-link a.a-links:hover{
-        background-color: #242526;
-        border-radius: 0;
-        color: #ffffff;
-        border-bottom: solid 0 #242526;
-        padding-bottom: 0;
+
+    .nav-links li:nth-child(8) a,
+    .nav-links li:nth-child(9) a,
+    .nav-links li:nth-child(10) a,
+    .nav-links li:nth-child(11) a{
+        background-color: transparent;
+        padding: 0.5rem;
+    }
+
+    .nav-links li:nth-child(8) a i,
+    .nav-links li:nth-child(9) a i,
+    .nav-links li:nth-child(10) a i,
+    .nav-links li:nth-child(11) a i{
+        background-color: transparent;
+    }
+
+    .nav-links li:nth-child(8) a i:hover,
+    .nav-links li:nth-child(9) a i:hover,
+    .nav-links li:nth-child(10) a i:hover,
+    .nav-links li:nth-child(11) a i:hover{
+        color: white;
     }
 
     /* Mega box */
@@ -418,6 +476,16 @@ input[type='radio']{
         position: absolute;
         left: 30px;
         top: 10px;
+    }
+
+    /* Hide lang, curr and the icons*/
+    .nav-links li:nth-child(6),
+    .nav-links li:nth-child(7),
+    .nav-links li:nth-child(8),
+    .nav-links li:nth-child(9),
+    .nav-links li:nth-child(10),
+    .nav-links li:nth-child(11){
+        display: none;
     }
 }
 
@@ -664,6 +732,23 @@ footer input{
         display: flex;
         flex-direction: row;
         flex-basis: fill;
+    }
+
+    span .fa-layers-counter{
+        display: inline-block;
+        background-color:#242526;
+        border-radius: 50%;
+        border: solid 2px #84bc22;
+        font-size: 9px;
+        color: #ffffff;
+        position: relative;
+        top: -12px;
+        left: -12px;
+        line-height: normal;
+      }
+
+    footer .footer-icons-list span.fa-layers.fa-fw {
+        background-color: transparent;   
     }
 
     footer .footer-icons-list li{
