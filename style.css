@@ -345,7 +345,7 @@ input[type='radio']{
     .nav-links li:nth-child(10) a,
     .nav-links li:nth-child(11) a{
         background-color: transparent;
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 
     .nav-links li:nth-child(8) a i,
