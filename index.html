@@ -26,12 +26,18 @@
                     <a href="#"><img src="PICTURES\logo.jpg" alt="Logo"></a>
                 </div>
                 <ul class="nav-links">
-                    <li class="main-link"><a href="#" class="a-links" id="services">SERVICES <i class="fa-solid fa-caret-down"></i></a>
+                    <li class="main-link"><a href="#" class="a-links" id="services">SERVICES 
+                        <i class="fa-solid fa-caret-down" id="services-down"></i>
+                        <i class="fa-solid fa-caret-up" id="services-up"></i>
+                    </a>
                     <!-- MEGA MENU-->
                     <div class="mega-box">
                         <div class="content">
                             <div class="row">
-                                <header>PRODUCT CATEGORIES</header>
+                                <header id="product-name">PRODUCT CATEGORIES 
+                                    <i class="fa-solid fa-caret-down" id="product-down"></i>
+                                    <i class="fa-solid fa-caret-up" id="product-up"></i>
+                                </header>
                                 <ul class="mega-links" id="product-col">
                                     <li><a href="#">Accessories</a></li>
                                     <li><a href="#">Alcohol</a></li>
@@ -60,7 +66,10 @@
                                 </ul>
                             </div>
                             <div class="row">
-                                <header>SALE</header>                                
+                                <header id="sale-name">SALE 
+                                    <i class="fa-solid fa-caret-down" id="sale-down"></i>
+                                    <i class="fa-solid fa-caret-up" id="sale-up"></i>
+                                </header>                                
                                 <ul class="mega-links" id="sale-col">
                                     <li><a href="#">Accessories</a></li>
                                     <li><a href="#">Alcohol</a></li>
@@ -86,17 +95,103 @@
                     <li><a href="#">$US</a></li>         
                 </ul>
                 <ul class="icon-links">
+                    
                     <li><a href="#"><i class="grey fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#"><i class="grey fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="grey fa-regular fa-heart"></i> </a></li>
-                    <li><a href="#"><i class="grey fa-solid fa-cart-shopping"></i></a></li> 
+                    <li><a href="#">
+                        <span class="fa-layers fa-fw">
+                            <i class="grey fa-regular fa-heart"></i>
+                            <span class="fa-layers-counter">2</span>
+                        </span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="fa-layers fa-fw">
+                            <i class="grey fa-solid fa-cart-shopping"></i>
+                            <span class="fa-layers-counter">2</span>
+                        </span>
+                    </a></li> 
                 </ul>
             </div>
 
             
         </nav>
     </header>
-    
+    !-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <div class="first-col">
+                <div id="copyright">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+                    <br> All Rights Reserved</p>
+                </div>
+                <div class="contact">
+                    <header id="contact">CONTACT
+                        <i class="fa-solid fa-caret-down" id="contact-down"></i>
+                        <i class="fa-solid fa-caret-up" id="contact-up"></i>
+                    </header>                  
+                    <ul class="contact-links">
+                        <li><a href="#">Headquarters:</a></li>
+                        <li><a href="#">5600, Blvd. des Galeries, Bur 530</a></li>
+                        <li><a href="#">Quebec, Quebec G2K 2H6</a></li>
+                        <li><a href="mailto: contact@osf-global.com">contact@osf-global.com</a></li>
+                        <li><a href="tel:+1 888-548-4344">+1 (888) 548-4344</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="categories">
+                <header id="categories">CATEGORIES
+                    <i class="fa-solid fa-caret-down" id="categories-down"></i>
+                    <i class="fa-solid fa-caret-up" id="categories-up"></i>
+                </header>
+                <ul class="categories-links">
+                    <li><a href="#">Accessories</a>   
+                    <li><a href="#">Alcohol</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Drink</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Flowers & Plants</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Garden</a></li>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Kids & Baby</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Motorcycles</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Pets</a></li>
+                    <li><a href="#">Romantic</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toys</a></li></li>
+                </ul>
+            </div>
+            <div class="about">
+                <header id="about">ABOUT
+                    <i class="fa-solid fa-caret-down" id="about-down"></i>
+                    <i class="fa-solid fa-caret-up" id="about-up"></i>
+                </header>
+                <ul class="about-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </div>
+            <div class="brands">
+                <ul>
+                    <li><a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                    <li><a href="https://myaccount.google.com/" target="_blank"><i class="fa-brands fa-google-plus-g fa-xl"></i></a></li>
+                    <li><a href="https://twitter.com/osfdigital" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
