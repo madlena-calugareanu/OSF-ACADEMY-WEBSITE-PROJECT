@@ -9,7 +9,8 @@
 
 /* LOGO */
 .logo img{
-    width: 10rem;
+    width: 8rem;
+    margin-right: 8rem;
 }
 
 .logo{
@@ -22,6 +23,11 @@ nav{
     position: fixed;
     z-index: 100;
     width: 100%;
+    border-bottom: solid 2px #81818134;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .nav-links,
@@ -42,12 +48,13 @@ nav .wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
   }
 
 nav .wrapper ul li a{
     list-style-type: none;
     text-decoration: none;
-    padding: 1rem 1rem 1.65rem 1rem;
+    padding: 1rem 1rem 1.2rem 1rem;
     color: #45413e;
     font-family: 'Lato';
 }
@@ -62,6 +69,10 @@ nav .wrapper a.a-links:hover{
     background-color: #262a32;
     border-bottom: solid 3px #84bc22;
     color: white;
+}
+
+nav .wrapper ul{
+    margin-bottom: 0;
 }
 
 span .fa-layers-counter{
@@ -86,9 +97,10 @@ span .fa-layers-counter{
     height: auto;
     background-color: #262a32;
     position: absolute;
-    top: 4.7rem;
+    top: 3.8rem;
     left: 0;
-    line-height: 2rem;
+    line-height: 2.2rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .mega-box .content{
@@ -97,8 +109,7 @@ span .fa-layers-counter{
     justify-content: center;
     flex-direction: row;
     background-color: #262a32;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 nav .row ul li{
@@ -132,7 +143,7 @@ nav .row header{
 }
 
 nav .mega-box .content .row{
-    padding-right: 6rem;
+    padding-right: 4rem;
     background-color: #262a32;
 } 
 
@@ -141,7 +152,9 @@ nav .mega-box .content :nth-child(3){
 } 
 
 nav .row img{
-    border-radius: 0.5rem;
+    border-radius: 10%;
+    width: 24rem;
+    background-color: transparent;
 }
 
 #product-col{
@@ -149,12 +162,13 @@ nav .row img{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
     padding-left: 0;
-    column-gap: 6rem;
+    column-gap: 4rem;
     background-color: #262a32;
 }
 
 #sale-col{
     padding-left: 0;
+    padding-right: 0;
 }
 
 .fa-solid.fa-caret-down,
@@ -191,7 +205,7 @@ nav .row img{
     .fa-solid.fa-bars{
         display: block;
         position: absolute;
-        top: 2.3rem;
+        top: 2rem;
         left: 2rem;
         cursor: pointer;
     }
@@ -199,8 +213,8 @@ nav .row img{
     .fa-solid.fa-x{
         display: none;
         position: absolute;
-        top: 2.3rem;
-        left: 16rem;
+        top: 2rem;
+        left: 20rem;
         cursor: pointer;
         color: white;
         z-index: 99;
@@ -218,8 +232,13 @@ nav .row img{
     .icon-links{
         display: flex;
         position: fixed;
-        top: 2rem;
-        right: 2rem;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    .logo img{
+        width: 8rem;
+        margin-right: 0rem;
     }
 
     /* Mobile menu*/
@@ -231,7 +250,7 @@ nav .row img{
         position: absolute;
         top: 0;
         left: 0;
-        width:320px;
+        width:370px;
         height: 100vh;
         line-height: 4rem;
         z-index: 98;
@@ -255,7 +274,7 @@ nav .row img{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        padding: 0 0 0 2rem;
+        padding: 0 0 0 1.5rem;
         overflow: auto;
     }
 
@@ -264,7 +283,9 @@ nav .row img{
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
+        overflow: auto;
     }
+    
     .mega-box .content .row img{
         display: none;
     }
@@ -540,3 +561,13 @@ footer .about li a{
     }
 
 }
+
+/* ---- MAIN ---- */
+
+main {
+
+}
+
+/* slider */
+
+.main-wrapper
