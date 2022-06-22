@@ -1,0 +1,112 @@
+.navbar-dark .navbar-nav a.nav-link {
+    color: #ffffff;
+    font-size: 1.1em;
+  }
+  .dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+  }
+
+ nav  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+ }
+
+ .container-fluid .navbar-nav.mx-auto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+ }
+
+ .container-fluid .navbar-nav.mx-auto .nav-item{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+ }
+
+ .nav-item a.nav-link.hover:hover{
+    background-color: #262a32;
+    border-bottom: solid 3px #84bc22;
+    color: white;
+ }
+
+ .nav-item a.nav-link.icon{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+ }
+
+ .navbar-nav.mx-auto .dropdown-menu.w-100{
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+ }
+
+ .dropdown-menu.w-100 .dropdown-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    left: 0;
+ }
+
+ .dropdown-container .dropdown-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ .dropdown-menu.w-100 .dropdown-container img{
+    width: 300px;
+    height: auto;
+ }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-menu li .dropdown-item {
+    color: gray;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu header {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #516beb;
+  }
+  .dropdown-menu li:first-child a:hover {
+    background-color: #f1f1f1;
+  }
+  @media only screen and (max-width: 1280px) {
+    .dropdown-menu.show {
+      flex-wrap: wrap;
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1280) {
+    .dropdown:hover .dropdown-menu {
+      width: 40vw;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
