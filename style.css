@@ -506,6 +506,103 @@ main {
     object-fit: cover;
 }
 
+.card.h-100.text-center .card-footer{
+    background-color: white;
+    border: solid 1px white;
+    font-size: 1.5rem;
+    padding-top: 0;
+}
+
+/* Card on hover*/
+
+.card.h-100.text-center .card-hover{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #81ba1eca;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: .5s ease;
+    z-index: 50;
+}
+
+.card-hover i{
+    background-color: transparent;
+    width: 4rem;
+    color: white;
+}
+
+.card.h-100.text-center .card-hover:hover {
+    opacity: 1;
+} 
+
+.card.h-100.text-center .card-hover i:hover{
+    cursor: pointer;
+    color: rgba(255, 37, 73, 0.779);
+}
+
+.card-hover-special i{
+    color: #84bc22;
+    background-color: transparent;
+}
+
+.card.h-100.special{
+    background-image: linear-gradient(to bottom, rgba(38, 170, 206, 0.786), rgba(117, 19, 93, 0.792)),url('PICTURES/card8.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card.h-100.special p{
+    background-color: transparent;
+    color: white;
+    padding-left: 2rem;
+    font-weight: 600;
+}
+
+.card.h-100.special i{
+    background-color: transparent;
+    color: #84bc22;
+    padding-right: 1rem;
+}
+
+.card.h-100.text-center .card-footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.card.h-100.text-center .card-footer button:first-child{
+    border: solid 2px #7d7d7d96;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color:#84bc22;
+    background-color: white;
+}
+
+.card.h-100.text-center .card-footer button:last-child{
+    border: solid 2px #7d7d7d96;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+}
+
 @media screen and (max-width: 1280px){
     
     .nav-links,
@@ -883,5 +980,8 @@ main {
     .carousel-caption.right{
         text-align: right;
     }
+
+    /* POPULAR ITEMS */
+    
 }
 
