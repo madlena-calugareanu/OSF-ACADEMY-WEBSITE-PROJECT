@@ -982,6 +982,16 @@ main {
     }
 
     /* POPULAR ITEMS */
-    
+    .row.row-cols-1.row-cols-lg-4.row-cols-md-3.g-4{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .col.blogBox.moreBox{
+        flex: 0 0 auto;
+    }
+    .container-fluid.popular-items.text-center{
+        margin-bottom: 5rem;
+    }
 }
 
