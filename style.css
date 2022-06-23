@@ -191,13 +191,6 @@ nav .row img{
     display: none;
 }
 
-/*---- POPULAR ITEMS ----*/
-
-.container-fluid.popular-items{
-    margin-top: 3rem;
-    padding: 3rem 4rem 3rem 4rem;
-    background-color: #262a32;
-}
 
 /*---- FOOTER ----*/ 
 
@@ -441,6 +434,76 @@ main {
 
 .carousel-caption.right{
     text-align: right;
+}
+
+
+/*---- POPULAR ITEMS ----*/
+
+.container-fluid.popular-items{
+    margin-top: 3rem;
+    padding: 3rem 4rem 3rem 4rem;
+    background-color: #262a32;
+}
+
+.container-fluid.popular-items .popular-heading{
+    padding-bottom: 2rem;
+    background-color: #262a32;
+}
+
+.popular-heading h4{
+    font-family: 'Lato';
+    background-color: #262a32;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-heading h4::before,
+.popular-heading h4::after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    margin: auto;
+}
+
+.popular-heading h4::before{
+    margin-right: 2rem;
+}
+
+.popular-heading h4::after{
+    margin-left: 2rem;
+}
+
+.card-container .row.row-cols-1{
+    background-color: #262a32;
+}
+
+.col.blogBox.moreBox{
+    background-color: #262a32;
+}
+
+#loadMore a{
+    background-color: #262a32;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 3rem;
+    border: solid 2px white;
+    border-radius: 2rem;
+}
+
+#loadMore{
+    background-color: #262a32;
+    padding-top: 2rem;
+}
+
+#loadMore a:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+.card.h-100.text-center img{
+    height: 300px;
+    width: auto;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1280px){
