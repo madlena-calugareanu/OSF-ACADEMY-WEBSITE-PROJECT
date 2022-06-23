@@ -191,6 +191,13 @@ nav .row img{
     display: none;
 }
 
+/*---- POPULAR ITEMS ----*/
+
+.container-fluid.popular-items{
+    margin-top: 3rem;
+    padding: 3rem 4rem 3rem 4rem;
+    background-color: #262a32;
+}
 
 /*---- FOOTER ----*/ 
 
