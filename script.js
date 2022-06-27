@@ -86,6 +86,8 @@ $( document ).ready(function () {
         }
       });
 
+    // Cart value increase  
+
     $('.iconHeart').click(function() {
         $('#heartIncrease').html(function(i, val) { return val*1+1 });
     });
@@ -93,4 +95,5 @@ $( document ).ready(function () {
     $('.iconCart').click(function() {
         $('#cartIncrease').html(function(i, val) { return val*1+1 });
     });
+
 });

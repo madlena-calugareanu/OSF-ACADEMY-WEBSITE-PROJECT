@@ -17,6 +17,44 @@
 </head>
 <body class="d-flex flex-column min-vh-100 w-100">
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" 
+                            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required/>
+                        </div>
+                        <div class="mb-3 password">
+                            <div class="modalform-text">
+                                <label class="form-label">Password</label>
+                                <h6>Forgot password?</h6>
+                            </div>
+                            
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" 
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one 
+                            uppercase and lowercase letter, and at least 6 or more characters" required/>
+                            
+                        </div>
+                        <div class="modal-footer d-flex flex-column justify-content-center">
+                            <button type="submit" class="btn btn-warning">LOGIN</button>
+                            <p><a href="#">I don't have an account</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+
     <!-- HEADER -->
     <header>
         <!-- MAIN NAVIGATION -->
@@ -25,7 +63,7 @@
             <i class="fa-solid fa-x fa-xl"></i>
             <div class="wrapper">
                 <div class="logo">
-                    <a href="#"><img src="PICTURES\logo.jpg" alt="Logo"></a>
+                    <a href="index.html"><img src="PICTURES\logo.jpg" alt="Logo"></a>
                 </div>
                 <ul class="nav-links">
                     <li class="main-link"><a href="#" class="a-links" id="services">SERVICES 
@@ -99,7 +137,7 @@
                 <ul class="icon-links">
                     
                     <li><a href="#"><i class="grey fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#"><i class="grey fa-regular fa-user"></i></a></li>
+                    <li  data-bs-toggle="modal" data-bs-target="#modalForm"><a href="#"><i class="grey fa-regular fa-user"></i></a></li>
                     <li><a href="#">
                         <span class="grey fa-regular fa-heart"></i>
                             <span id="heartIncrease" class="fa-layers-counter heart">0</span>
@@ -673,6 +711,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

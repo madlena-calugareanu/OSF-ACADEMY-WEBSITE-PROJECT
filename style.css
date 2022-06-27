@@ -7,6 +7,80 @@
 
 /* ----- HEADER -----*/
 
+/* Registration Modal*/
+
+.modal-dialog.modal-dialog-centered .modal-body{
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+#modalForm{
+    background-color: rgba(255, 255, 255, 0.249);
+}
+.modal-dialog.modal-dialog-centered{
+    background-color: transparent;
+}
+
+.modal-header h5.modal-title{
+    text-align: center;
+    width: 100%;
+}
+
+.modal-content .modal-header,
+.modal-footer.d-flex.flex-column.justify-content-center{
+    border-bottom: transparent;
+    border-top: transparent;
+}
+
+#exampleModalLabel{
+    font-family: 'Lato';
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.modal-body .mb-3.password .modalform-text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-body .mb-3.password .modalform-text h6{
+    color: #84bc22;
+    cursor: pointer;
+}
+
+.modal-body label{
+    font-family: 'Lato';
+}
+
+.modal-body input{
+    border-radius: 2rem;
+}
+
+.modal-footer p a{
+    text-decoration: none;
+    color: #84bc22;
+}
+
+.modal-footer p a:hover{
+    color: #648d1d;
+}
+
+.modal-footer button{
+    border: solid 3px #84bc22;
+    border-radius: 2rem;
+    width: 12rem;
+    color: white;
+    background-color: #84bc22;
+}
+
+.modal-footer button:hover{
+    color: #262a32;
+    background-color: white;
+    border: solid 3px #84bc22;
+}
+
+
 /* LOGO */
 .logo img{
     width: 8rem;
