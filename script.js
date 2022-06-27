@@ -85,4 +85,12 @@ $( document ).ready(function () {
           $("#loadMore").fadeOut('slow');
         }
       });
+
+    $('.iconHeart').click(function() {
+        $('#heartIncrease').html(function(i, val) { return val*1+1 });
+    });
+
+    $('.iconCart').click(function() {
+        $('#cartIncrease').html(function(i, val) { return val*1+1 });
+    });
 });
