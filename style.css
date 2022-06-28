@@ -1335,6 +1335,68 @@ p#readMore:hover{
     font-weight: 800;
 }
 
+/*---- COOKIES CONSENT ----*/
+
+.cookies-wrapper{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    text-align: left;
+    z-index: 120;
+}
+  .cookies-wrapper.hide{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .cookies.content header{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .cookies.content{
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+  .cookies.content p{
+    color: #858585;
+  }
+  .cookies.content button{
+    width: 15rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #84bc22;
+    color: white;
+    border-radius: 0.8rem;
+    border: solid 3px white;
+  }
+
+  .cookies.content button:hover{
+    background-color: #648d1d;
+  }
+  
+  .cookies.message{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button.btn-close.cookies{
+    background-color: transparent;
+    width: 3rem;
+    padding: 0;
+    margin: 0;
+}
+  button.btn-close.cookies:hover{
+    background-color: transparent;
+  }
+
 @media screen and (max-width: 1280px){
     
     .nav-links,
