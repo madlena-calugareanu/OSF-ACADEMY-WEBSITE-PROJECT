@@ -63,7 +63,7 @@
                     <a href="index.html"><img src="PICTURES\logo.jpg" alt="Logo"></a>
                 </div>
                 <ul class="nav-links">
-                    <li class="main-link"><a href="#" class="a-links" id="services">SERVICES 
+                    <li class="main-link"><a href="services.html" class="a-links" id="services">SERVICES 
                         <i class="fa-solid fa-caret-down" id="services-down"></i>
                         <i class="fa-solid fa-caret-up" id="services-up"></i>
                     </a>
@@ -160,6 +160,7 @@
         </ol>
     </div>
 
+    <!-- PRODUCT TAB -->
     <div class="container-fluid product">
         <h2>Archi Desk Accessories Pen Cup</h2>
         <div class="product wrapper">
@@ -190,26 +191,245 @@
                         <input type="number" class="count" name="qty" value="1">
                         <span class="plus bg-dark">+</span>
                     </div>
-                    <button class="btn btn-secondary" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                        ADD TO CART
-                    </button>
+                    <div class="qty mt-0">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            ADD TO CART
+                        </button>
+                    </div> 
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum sagittis fringilla. Morbi varius, lorem in volutpat faucibus, neque odio aliquam mi, in vestibulum libero urna id diam. Donec eros.
                 </p>
-                <p>Read more</p>
+                <p id="readMore">Read more</p>
                 <div class="share icons">
-                    <div class="product brands">
                         <ul>
+                            <p>Share on</p>
                             <li><a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
                             <li><a href="https://myaccount.google.com/" target="_blank"><i class="fa-brands fa-google-plus-g fa-xl"></i></a></li>
                             <li><a href="https://twitter.com/osfdigital" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
                             <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
                         </ul>
-                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid tabs">
+            <div class="click tabs">
+                <h3 id="click-description">Description</h3>
+                <h3 id="click-add">Additional information</h3>
+                <h3 id="click-reviews">Reviews (3)</h3>
+            </div>
+            <div class="click tabs description">
+                <div class="tabs description" id="tabs-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae 
+                    dui vestibulum, vestibulum nisi vel, tempor felis. Duis nec dui a 
+                    nisi pretium semper. Sed nec velit vitae quam mattis consectetur 
+                    quis sit amet nisi. Vivamus vitae bibendum lacus. Proin commodo 
+                    commodo purus. Pellentesque ullamcorper dui eu convallis bibendum. 
+                    Curabitur facilisis malesuada augue feugiat auctor. Nunc orci ante,
+                    rhoncus eget tempor ac, imperdiet non turpis. </p>
+                    <p>Aliquam in massa lobortis,
+                    tincidunt libero at, euismod neque. Pellentesque quis lacus quis 
+                    nulla gravida auctor sit amet quis lectus. Nunc at egestas turpis,
+                    ac finibus sapien. Nunc quis est tempor, mattis metus nec, facilisis
+                    leo. Vivamus consequat varius ex eu semper. Fusce hendrerit fringilla
+                    ligula, ac commodo eros consectetur commodo. Maecenas vestibulum 
+                    ultrices massa, quis luctus lectus porta a. Aenean ultricies dolor 
+                    sapien, vel hendrerit massa rhoncus vitae.</p>
+                </div>
+                
+                <div class="tabs description" id="tabs-add" style="display: none;">
+                    <p>Aliquam in massa lobortis,
+                    tincidunt libero at, euismod neque. Pellentesque quis lacus quis 
+                    nulla gravida auctor sit amet quis lectus. Nunc at egestas turpis,
+                    ac finibus sapien. Nunc quis est tempor, mattis metus nec, facilisis
+                    leo. Vivamus consequat varius ex eu semper. <br>
+                    Fusce hendrerit fringilla
+                    ligula, ac commodo eros consectetur commodo. Maecenas vestibulum 
+                    ultrices massa, quis luctus lectus porta a. Aenean ultricies dolor 
+                    sapien, vel hendrerit massa rhoncus vitae.</p>
+                </div>
+                
+                <div class="tabs description" id="tabs-reviews" style="display: none;">
+                    <p>Nunc orci ante,
+                    rhoncus eget tempor ac, imperdiet non turpis. Aliquam in massa lobortis,
+                    tincidunt libero at, euismod neque. Pellentesque quis lacus quis 
+                    nulla gravida auctor sit amet quis lectus.</p>
+                    <p>Nunc at egestas turpis,
+                    ac finibus sapien. Nunc quis est tempor, mattis metus nec, facilisis
+                    leo. Vivamus consequat varius ex eu semper. Fusce hendrerit fringilla
+                    ligula, ac commodo eros consectetur commodo.</p>
+                    <p>Maecenas vestibulum 
+                    ultrices massa, quis luctus lectus porta a. Aenean ultricies dolor 
+                    sapien, vel hendrerit massa rhoncus vitae.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- POPULAR ITEMS-->
+        <div class="container-fluid popular-items text-center products" 
+            style="background-color: rgb(251, 245, 237)">
+            <div class="popular-heading products" style="background-color: rgb(251, 245, 237)">
+                <h4 style="background-color: rgb(251, 245, 237)">Popular Items</h4>
+            </div>
+            <div class="card-container products" style="background-color: rgb(251, 245, 237)">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4" style="background-color: rgb(251, 245, 237)">
+                    <div class="col blogBox moreBox" style="background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kristina Dam Oak Table With White Marble Top</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Active Financial Market and Charcoal Soap</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hay - About A Lounge Chair AAL 93</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kristina Dam Oak Table With White Marble Top</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="display: none;
+                    background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kristina Dam Oak Table With White Marble Top</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart "></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="display: none;
+                    background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hay - About Lounge Chair AAL 93</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="display: none;
+                    background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card11.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Active Financial Market and Charcoal Soap</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col blogBox moreBox" style="display: none;
+                    background-color: rgb(251, 245, 237)">
+                        <div class="card h-100 text-center">
+                            <img src="PICTURES\card12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hay - About A Lounge Chair AAL 93</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">$ 799.55</small>
+                            </div>
+                            <div class="card-hover">
+                                <i class="fa-solid fa-circle-plus fa-5x iconCart"></i>
+                                <i class="fa-brands fa-gratipay fa-5x iconHeart "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loadMore" style="background-color: rgb(251, 245, 237)">
+                <a href="#">Load More</a>
+            </div>
+        </div>
     </div>
+
+    <!-- BENEFITS CONTENT -->
+    
+    <div class="container-fluid benefits ms-0 me-0 pe-0 ps-0">
+        <div class="ben-content ms-0 me-0 pe-0 ps-0">
+            <i class="fa-solid fa-truck-ramp-box fa-3x"></i> 
+            <div  class="benefits text">
+                <h3>FOCUS</h3>
+                <h4>Our anwavering focus on superior service delivery and building next generation competencies</h4>
+            </div>
+        </div>
+        <div class="ben-content ms-0 me-0 pe-0 ps-0">
+            <i class="fa-solid fa-recycle fa-4x"></i> 
+            <div  class="benefits text">
+                <h3>METHOD</h3>
+                <h4>A standardized methodology designed to deliver measurable business results and predictable costs</h4>
+            </div>
+        </div>
+        <div class="ben-content ms-0 me-0 pe-0 ps-0">
+            <i class="fa-solid fa-clipboard-check fa-4x"></i>
+            <div  class="benefits text">
+                <h3>KNOWLEDGE</h3>
+                <h4>A highly skilled, proactive workforce that reliably improves each client's ROI while mitigating their business risk</h4>
+            </div>
+        </div>
+    </div>        
 
     <!--FOOTER-->
     <footer>

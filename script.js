@@ -109,3 +109,34 @@ $(document).ready(function(){
             }
         });
  });
+
+ // product details tab
+
+ $(document).ready(function(){
+    $('#click-description').addClass('clicked-tab');
+    $('#click-description').on('click', ()=>{
+        $('#tabs-description').show();
+        $('#tabs-add').hide();
+        $('#tabs-reviews').hide();
+        $('#click-add').removeClass('clicked-tab');
+        $('#click-description').addClass('clicked-tab');
+        $('#click-reviews').removeClass('clicked-tab');
+    });
+    $('#click-add').on('click', ()=>{
+        $('#tabs-add').show();
+        $('#tabs-description').hide();
+        $('#tabs-reviews').hide();
+        $('#click-add').addClass('clicked-tab');
+        $('#click-description').removeClass('clicked-tab');
+        $('#click-reviews').removeClass('clicked-tab');
+    });
+    $('#click-reviews').on('click', ()=>{
+        $('#tabs-reviews').show();
+        $('#tabs-description').hide();
+        $('#tabs-add').hide();
+        $('#click-reviews').addClass('clicked-tab');
+        $('#click-description').removeClass('clicked-tab');
+        $('#click-add').removeClass('clicked-tab');
+    });
+
+});
