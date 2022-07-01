@@ -1,7 +1,12 @@
 
 $(document).ready(()=>{
 
-    if(window.matchMedia('(min-width: 1280px)').matches){
+    $(window).bind('resize', function() {
+        location.reload();
+    });
+        // make it as accordion for widest screens
+        if (window.innerWidth > 1280) {
+
         // Hover on mega-menu//
         $('.mega-box').hide();
         $('#services').on('mouseenter',()=>{
@@ -11,63 +16,62 @@ $(document).ready(()=>{
             $('.mega-box').hide();
             $('#services').removeClass('services-toggle')
         });
-    }
-    
-    // Display menu on click //   
-    if(window.matchMedia('(max-width: 1280px)').matches){
-        $('.fa-bars').on('click',()=>{
-            $('.nav-links').toggle().addClass('mobile-menu');
-            $('.fa-x').show();
-        });
-        $('.fa-x').on('click', ()=>{
-            $('.nav-links').toggle().removeClass('mobile-menu');
-            $('.fa-x').hide();
-        })
-        $('#services').on('click',()=>{
-            $('.mega-box').toggle().addClass('mobile-mega');
-            $('#services-down').toggle();
-            $('#services-up').toggle();
-        });
-        $('.mega-links').hide();
-        $('#product-name').on('click', ()=>{
-            $('#product-col').toggle();  
-            $('#product-down').toggle();
-            $('#product-up').toggle();         
-        });
-        $('#sale-name').on('click', ()=>{
-            $('#sale-col').toggle();   
-            $('#sale-down').toggle();
-            $('#sale-up').toggle();  
-        });
-    }
+        };
 
-    if(window.matchMedia('(max-width: 768px)').matches){
+        if (window.innerWidth < 1280) {
             $('.fa-bars').on('click',()=>{
-            $('.nav-links').show().addClass('mobile-menu');
-            $('.fa-bars').hide();
-            $('.fa-x').show();
-        });
-        $('.fa-x').on('click', ()=>{
-            $('.nav-links').hide().removeClass('mobile-menu');
-            $('.fa-bars').show();
-            $('.fa-x').hide();
-        });
-        $('#contact').on('click', ()=>{
-            $('.contact-links').toggle();
-            $('#contact-down').toggle();
-            $('#contact-up').toggle();
-        });
-        $('#categories').on('click', ()=>{
-            $('.categories-links').toggle();
-            $('#categories-down').toggle();
-            $('#categories-up').toggle();
-        });
-        $('#about').on('click', ()=>{
-            $('.about-links').toggle();
-            $('#about-down').toggle();
-            $('#about-up').toggle();
-        })
-    }
+                $('.nav-links').toggle().addClass('mobile-menu');
+                $('.fa-x').show();
+            });
+            $('.fa-x').on('click', ()=>{
+                $('.nav-links').toggle().removeClass('mobile-menu');
+                $('.fa-x').hide();
+            })
+            $('#services').on('click',()=>{
+                $('.mega-box').toggle().addClass('mobile-mega');
+                $('#services-down').toggle();
+                $('#services-up').toggle();
+            });
+            $('.mega-links').hide();
+            $('#product-name').on('click', ()=>{
+                $('#product-col').toggle();  
+                $('#product-down').toggle();
+                $('#product-up').toggle();         
+            });
+            $('#sale-name').on('click', ()=>{
+                $('#sale-col').toggle();   
+                $('#sale-down').toggle();
+                $('#sale-up').toggle();  
+            });
+        };
+
+        if (window.innerWidth < 768) {
+            $('.fa-bars').on('click',()=>{
+                $('.nav-links').show().addClass('mobile-menu');
+                $('.fa-bars').hide();
+                $('.fa-x').show();
+            });
+            $('.fa-x').on('click', ()=>{
+                $('.nav-links').hide().removeClass('mobile-menu');
+                $('.fa-bars').show();
+                $('.fa-x').hide();
+            });
+            $('#contact').on('click', ()=>{
+                $('.contact-links').toggle();
+                $('#contact-down').toggle();
+                $('#contact-up').toggle();
+            });
+            $('#categories').on('click', ()=>{
+                $('.categories-links').toggle();
+                $('#categories-down').toggle();
+                $('#categories-up').toggle();
+            });
+            $('#about').on('click', ()=>{
+                $('.about-links').toggle();
+                $('#about-down').toggle();
+                $('#about-up').toggle();
+            });
+        };
 });
 
 $( document ).ready(function () {
@@ -81,8 +85,29 @@ $( document ).ready(function () {
         if ($(".moreBox:hidden").length == 0) {
           $("#loadMore").fadeOut('slow');
         }
-      });
+    });
+    $(".moreBox").slice(0, 4).show();
+      if ($(".blogBox:hidden").length != 0) {
+        $("#loadMore2").show();
+      }   
+      $("#loadMore2").on('click', function (e) {
+        e.preventDefault();
+        $(".moreBox:hidden").slice(0, 8).slideDown();
+        if ($(".moreBox:hidden").length == 0) {
+          $("#loadMore2").fadeOut('slow');
+        }
+    });
 
+    $("#readMorePara").hide();
+
+    $('#readMore').click(function() {
+        $("#readMorePara").toggle();
+    });
+
+    // Zoom image in detailed product
+    $('.product images img').on('click', (event)=>{
+        $('.product images img').addClass('firstProductImage');
+    })
     // Cart value increase  
 
     $('.iconHeart').click(function() {
@@ -93,12 +118,16 @@ $( document ).ready(function () {
         $('#cartIncrease').html(function(i, val) { return val*1+1 });
     });
 
+    $('#dropdownMenuButton2').click(function() {
+        $('#countNum').html(function(i, val) { return val*1+1 });
+    });
+
     // COOKIES
 
     $(".cookies-wrapper").hide().delay(10000).fadeIn(900);
 
     const cookieBox = document.querySelector(".cookies-wrapper");
-    acceptBtn = cookieBox.querySelector("button");
+    acceptBtn = cookieBox.querySelector(".button-item");
     acceptBtn.onclick = ()=>{
       //setting cookie for 1 month, after one month it'll be expired automatically
       document.cookie = "CookieBy=Me; max-age="+60*60*24*30;

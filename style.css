@@ -1054,6 +1054,25 @@ small.text-muted.awesome{
     padding-bottom: 2rem;
 }
 
+.chooseOne select{
+    border: none;
+    color: #7d7d7d96;
+}
+
+.carousel-item.active .carousel-caption button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato';
+}
+
+.carousel-item.active .carousel-caption button{
+    width: 10rem;
+}
+
+.carousel-item.active .carousel-caption button a:hover{
+    color: #262a32;
+}
+
 /* increase quantity */
 
 .dropdown.color button,
@@ -1334,6 +1353,25 @@ p#readMore:hover{
     background-color: transparent;
     font-weight: 800;
 }
+
+#loadMore2 a{
+    background-color: #84bc22;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 3rem;
+    border: solid 2px white;
+    border-radius: 2rem;
+}
+
+#loadMore2{
+    background-color: #262a32;
+    padding-top: 2rem;
+}
+
+#loadMore2 a:hover{
+    background-color: #648d1d;
+}
+
 
 /*---- COOKIES CONSENT ----*/
 
@@ -1628,6 +1666,29 @@ p#readMore:hover{
     .benefits.text h4{
         font-size: 1rem;
     }    
+
+    /* PRODUCT DETAILED PAGE */
+
+    .product.wrapper .product.images{
+        flex-direction: column;
+        width: 24rem;
+    }
+
+    .product.wrapper .product.images img{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .product.images .product.images.cnt img{
+        width: 8rem;
+        padding: 1rem;
+    }
+
+    .product.images .product.images.cnt{
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -1945,6 +2006,49 @@ p#readMore:hover{
         width: 70%;
         font-size: 1rem;
         font-family: 'Lato';
+        width: 100%;
+    }
+
+    /* PRODUCT DETAILED PAGE */
+    .product.wrapper{
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .product.wrapper .product.images{
+        flex-direction: column;
+        width: 22rem;
+    }
+
+    .product.wrapper .product.images img{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .product.images .product.images.cnt img{
+        width: 8rem;
+        padding: 1rem;
+        flex: 0 0 auto;
+    }
+
+    .product.images .product.images.cnt{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 22rem;
+    }
+
+    .container-fluid.tabs{
+        display: none;
+    }
+
+    .product.wrapper .product.text{
+        padding: 2rem;
+    }
+
+    .product.wrapper .product.text .share.icons{
         width: 100%;
     }
 
