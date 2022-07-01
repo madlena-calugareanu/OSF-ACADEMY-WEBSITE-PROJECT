@@ -128,8 +128,19 @@
                     <li class="main-link"><a href="404.html" class="a-links">CONTACT US</a></li>
                 </ul>
                 <ul class="feature-links">
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">$US</a></li>         
+                    <div class="chooseOne">
+                        <select name="chooseOne" id="languages">
+                            <option value="EN">EN</option>
+                            <option value="DE">DE</option>
+                            <option value="RO">RO</option>
+                        </select>
+                    </div>
+                    <div class="chooseOne">
+                        <select name="chooseOne" id="currency">
+                            <option value="RON">RON</option>
+                            <option value="EUR">$EUR</option>
+                            <option value="US">$US</option>
+                        </select>                    </div>
                 </ul>
                 <ul class="icon-links">
                     
@@ -164,15 +175,37 @@
     <div class="container-fluid product">
         <h2>Archi Desk Accessories Pen Cup</h2>
         <div class="product wrapper">
-            <div class="product images">
-                <img class="product images img first" src="PICTURES\pdp-images\PG.10216885.JJ169XX.PZ.jpg" alt="">
-                <div class="product images cnt">
-                    <img class="product images img" src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.PZ.jpg" alt="">
-                    <img  class="product images img" src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.BZ.jpg" alt="">
-                    <img  class="product images img" src="PICTURES\pdp-images\PG.10216885.JJ169XX.BZ.jpg" alt="">
-                    <img  class="product images img" src="PICTURES\pdp-images\PG.10216885.JJ169XX.PZ.jpg" alt="">
-                </div>
-            </div>
+            <div class="container-fluid detailed product">
+                    <div class="container-fluid detailedProduct slider">
+                      <div class="container-fluid detailedProduct image">
+                        <img src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.PZ.jpg" id="id11"/>
+                        <img src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.BZ.jpg" id="id22"/>
+                        <img src="PICTURES\pdp-images\PG.10216885.JJ169XX.BZ.jpg" id="id33"/>
+                        <img src="PICTURES\pdp-images\PG.10216885.JJ169XX.PZ.jpg" id="id44"/>
+                      </div>
+                      <div class="container-fluid detailedProduct input">
+                        <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+                        <label for="id1">
+                          <img src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.PZ.jpg"/>
+                        </label>
+                  
+                        <input type="radio" name="slide_switch" id="id2"/>
+                        <label for="id2">
+                          <img src="PICTURES\pdp-images\PG.10216885.JJ8UTXX.BZ.jpg"/>
+                        </label>
+                  
+                        <input type="radio" name="slide_switch" id="id3"/>
+                        <label for="id3">
+                          <img src="PICTURES\pdp-images\PG.10216885.JJ169XX.BZ.jpg"/>
+                        </label>
+                  
+                        <input type="radio" name="slide_switch" id="id4"/>
+                        <label for="id4">
+                          <img src="PICTURES\pdp-images\PG.10216885.JJ169XX.PZ.jpg"/>
+                        </label>
+                    </div>
+                    </div>
+            </div>    
             <div class="product text">
                 <h3>$299.99</h3>
                 <div class="dropdown color">

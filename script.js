@@ -105,9 +105,33 @@ $( document ).ready(function () {
     });
 
     // Zoom image in detailed product
-    $('.product images img').on('click', (event)=>{
-        $('.product images img').addClass('firstProductImage');
-    })
+    $('.image > img').hide();
+    $('#id11').show();
+    $('#id1').on('click', ()=>{
+        $('#id11').show();
+        $('#id22').hide();
+        $('#id33').hide();
+        $('#id44').hide();
+    });
+    $('#id2').on('click', ()=>{
+        $('#id22').show();
+        $('#id11').hide();
+        $('#id33').hide();
+        $('#id44').hide();
+    });
+    $('#id3').on('click', ()=>{
+        $('#id33').show();
+        $('#id22').hide();
+        $('#id11').hide();
+        $('#id44').hide();
+    });
+    $('#id4').on('click', ()=>{
+        $('#id44').show();
+        $('#id22').hide();
+        $('#id33').hide();
+        $('#id11').hide();
+    });
+
     // Cart value increase  
 
     $('.iconHeart').click(function() {

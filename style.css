@@ -1008,32 +1008,68 @@ small.text-muted.awesome{
     overflow: auto;
 }
 
-.product.wrapper .product.images img{
-    width: 30rem;
-    padding: 0;
-}
-
-.product.images .product.images.cnt img{
-    width: 8rem;
-    padding: 1rem;
-}
-
-.product.images .product.images.cnt{
+/* DETAILED PRODUCT SLIDER */
+.container-fluid.detailed.product{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Basic style for Slider */
+  .container-fluid.detailedProduct.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
-
-.product.wrapper .product.images{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    .container-fluid.detailedProduct.image{
+      width: 70%;
+      margin: 0;
+    }
+  
+    .container-fluid.detailedProduct.input{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 30%;
+     }
+  
+     .container-fluid.detailedProduct.input label{
+      height: auto;
+     }
+    
+   /* Style for Image*/
+   .container-fluid.detailedProduct.image >img{
+      width: 100%;
+      transition: all 0.5s;
+      padding: 1rem;
+   }
+    
+   .slider input[name='slide_switch'] {
+     display: none;
+   }
+    
+   .container-fluid.detailedProduct.slider label {
+     cursor: pointer;
+     transition: all 0.5s;
+     opacity: 0.6;
+   }
+   .container-fluid.detailedProduct.input label img{
+    height: 7rem;
     padding: 1rem;
-}
-
+   }
+    
+   .slider input[name='slide_switch']:checked+label {
+     opacity: 1;
+   }
+   
 .product.wrapper .product.text{
     text-align: left;
     display: flex;
@@ -1667,28 +1703,60 @@ p#readMore:hover{
         font-size: 1rem;
     }    
 
-    /* PRODUCT DETAILED PAGE */
+/* DETAILED PRODUCT SLIDER */
 
-    .product.wrapper .product.images{
-        flex-direction: column;
-        width: 24rem;
+  .container-fluid.detailedProduct.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
-
-    .product.wrapper .product.images img{
-        width: 100%;
-        padding: 0;
+  
+    .container-fluid.detailedProduct.image{
+      width: 100%;
     }
+  
+    .container-fluid.detailedProduct.input{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+      width: 30%;
+      padding: 1rem;
+     }
+  
+     .container-fluid.detailedProduct.input label{
+      height: auto;
+     }
     
-    .product.images .product.images.cnt img{
-        width: 8rem;
-        padding: 1rem;
-    }
-
-    .product.images .product.images.cnt{
-        flex-direction: row;
-        overflow: hidden;
-    }
+   /* Style for Image*/
+   .container-fluid.detailedProduct.image >img{
+      width: 20rem;
+      transition: all 0.5s;
+      padding: 1rem;
+   }
     
+   .slider input[name='slide_switch'] {
+     display: none;
+   }
+    
+   .container-fluid.detailedProduct.slider label {
+     cursor: pointer;
+     transition: all 0.5s;
+     opacity: 0.6;
+   }
+   .container-fluid.detailedProduct.input label img{
+    height: 7rem;
+    padding: 1rem;
+   }
+    
+   .slider input[name='slide_switch']:checked+label {
+     opacity: 1;
+   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -2014,30 +2082,6 @@ p#readMore:hover{
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-
-
-    .product.wrapper .product.images{
-        flex-direction: column;
-        width: 22rem;
-    }
-
-    .product.wrapper .product.images img{
-        width: 100%;
-        padding: 0;
-    }
-    
-    .product.images .product.images.cnt img{
-        width: 8rem;
-        padding: 1rem;
-        flex: 0 0 auto;
-    }
-
-    .product.images .product.images.cnt{
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        width: 22rem;
     }
 
     .container-fluid.tabs{
