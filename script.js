@@ -27,18 +27,21 @@ $(document).ready(()=>{
                 $('.nav-links').toggle().removeClass('mobile-menu');
                 $('.fa-x').hide();
             })
+            $('#services-up').hide();
             $('#services').on('click',()=>{
                 $('.mega-box').toggle().addClass('mobile-mega');
                 $('#services-down').toggle();
                 $('#services-up').toggle();
             });
             $('.mega-links').hide();
+            $('#product-up').hide();
             $('#product-name').on('click', ()=>{
                 $('#product-col').toggle();  
                 $('#product-down').toggle();
                 $('#product-up').toggle();         
             });
-            $('#sale-name').on('click', ()=>{
+            $('#sale-up').hide(); 
+            $('#sale-name').on('click', ()=>{ 
                 $('#sale-col').toggle();   
                 $('#sale-down').toggle();
                 $('#sale-up').toggle();  
