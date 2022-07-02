@@ -59,16 +59,19 @@ $(document).ready(()=>{
                 $('.fa-bars').show();
                 $('.fa-x').hide();
             });
+            $('#contact-up').hide();
             $('#contact').on('click', ()=>{
                 $('.contact-links').toggle();
                 $('#contact-down').toggle();
                 $('#contact-up').toggle();
             });
+            $('#categories-up').hide();
             $('#categories').on('click', ()=>{
                 $('.categories-links').toggle();
                 $('#categories-down').toggle();
                 $('#categories-up').toggle();
             });
+            $('#about-up').hide();
             $('#about').on('click', ()=>{
                 $('.about-links').toggle();
                 $('#about-down').toggle();
