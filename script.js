@@ -171,6 +171,17 @@ $( document ).ready(function () {
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
 
+    // Show password toggle
+    $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if ($('#password').attr("type") == "password") {
+            $('#password').attr("type", "text");
+        } else {
+            $('#password').attr("type", "password");
+        }
+    });
 });
 
 

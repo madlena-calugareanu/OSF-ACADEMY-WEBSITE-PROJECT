@@ -1236,6 +1236,15 @@ p#readMore:hover{
     color: rgb(204, 204, 204);
 }
 
+
+.field-icon {
+    float: right;
+    margin-right: 0.75rem;
+    margin-top: -1.65rem;
+    position: relative;
+    z-index: 2;
+  }
+
 /* PRODUCT TABS*/
 
 .container-fluid.tabs{
