@@ -171,6 +171,13 @@ $( document ).ready(function () {
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
 
+    $('#closeCookies').on('click', ()=>{
+        $('.cookies-wrapper').hide();
+        $('.cookies-wrapper').show(180000);
+        
+    })
+
+
     // Show password toggle
     $(".toggle-password").click(function() {
 
