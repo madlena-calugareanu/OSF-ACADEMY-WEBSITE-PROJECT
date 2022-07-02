@@ -1754,6 +1754,111 @@ p#readMore:hover{
    .slider input[name='slide_switch']:checked+label {
      opacity: 1;
    }
+
+   /*===== 404 PAGE =====*/
+.container-fluid.error {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(184, 116, 116, 0.049);
+    z-index: 10;
+    padding-top: 8rem;
+}
+
+.container-fluid.error img{
+    position: absolute;
+    height: 35rem;
+    background-color: transparent;
+    z-index: 0;
+    left: -12rem;
+    opacity: 0.1;
+    color: rgb(255, 0, 0);
+}
+
+.container-fluid.error h1{
+    font-size: 10rem;
+    font-weight: 700;
+    text-shadow: #262a32 1px 0 10px;
+    text-align: end;
+    color: #84bc22;
+    background-color: transparent;
+    width: 70%;
+    z-index: 9;
+}
+
+.container-fluid.text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 9;
+}
+
+.container-fluid.text h2{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-family: 'Lato';
+    font-weight: 600;
+    background-color: transparent;
+    z-index: 9;
+}
+.container-fluid.text a{
+    text-decoration: none;
+    background-color: transparent;
+    z-index: 9;
+}
+
+.container-fluid.text h3{
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Lato';
+    font-weight: 600;
+    background-color: transparent;
+    color: #84bc22;
+    z-index: 9;
+}
+
+.container-fluid.text h3:hover{
+    color: #648d1d;
+    z-index: 9;
+}
+
+.container-fluid.text p{
+    background-color: transparent;
+    z-index: 9;
+}
+
+.container-fluid.text form{
+    background-color: transparent;
+    width: 100%;
+    z-index: 9;
+}
+
+.container-fluid.error .d-flex.search input{
+    border-radius: 2rem;
+    width: 100%;
+    background-image: url('PICTURES/search.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: right;
+    opacity: 0.3;
+    z-index: 9;
+}
+
+.breadcrumb.cnt{
+    padding-top: 5rem;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -1889,7 +1994,7 @@ p#readMore:hover{
 
    footer .brands li{
        display: inline-block;
-       padding: 1rem;
+       padding: 0.9rem;
    }
    footer .brands{
        align-items: center;
@@ -2001,13 +2106,20 @@ p#readMore:hover{
     }
 
     /*===== 404 PAGE =====*/
+    .breadcrumb.cnt{
+        position: relative;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        background-color: rgba(184, 116, 116, 0.049);
+    }
+
     .container-fluid.error h1{
         font-size: 5rem;
         text-align: center;
     }
 
     .container-fluid.error {
-        padding-top: 6rem;
+        position: relative;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -2015,8 +2127,8 @@ p#readMore:hover{
         height: 100vh;
         width: 100%;
         background-color: rgba(184, 116, 116, 0.049);
-        position: relative;
-        padding-bottom: 6rem;
+        padding-bottom: 8rem;
+        flex-basis: -moz-available;
     }
 
     .container-fluid.text h2{
