@@ -819,6 +819,7 @@ small.text-muted.awesome{
     flex-direction: row;
     justify-content: center;
     background-color: #45413E;
+    overflow: hidden;
 }
 
 .container-fluid.benefits .ben-content i{
